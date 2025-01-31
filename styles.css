@@ -1,0 +1,21 @@
+* {  
+            font-family: Montserrat Alternates, serif;  
+        } 
+        body {  
+            overflow-x: hidden; /* prevent horizontal scroll */  
+        }  
+        header {  
+            background-color: #F2F6D0;  
+        } 
+        footer {  
+            background-color: #73C7C7;
+
+        }
+        .card-body{  
+            background-color: #aae0b7;  
+        }
+        .navbar-brand {  
+            color: brown;
+            font-size: 50px;  
+            font-weight: 400;  
+        }

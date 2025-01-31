@@ -1,166 +1,95 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Store</title>
-    <!-- FIXME: -->
-  <!--UNFINISHED-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Online Store</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <!--font-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css"> <!--linking CSS file -->  
+</head>  
+<body>  
+    <header>  
+        <nav class="navbar navbar-expand-lg">  
+            <div class="container-fluid"> <!--container-fluid sets full width of the container-->
+                <a class="navbar-brand" href="#">OnlineStore</a>  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+                    <span class="navbar-toggler-icon"></span>  
+                </button>  
+                <div class="collapse navbar-collapse" id="navbarNav">  
+                    <ul class="navbar-nav ms-auto">  
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </nav>  
+    </header>  
 
-        /* Header Section */
-        .navbar {
-            background-color: #333;
-        }
-        .navbar-brand {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .navbar-nav .nav-link {
-            color: white;
-        }
+    <!-- Product Section -->  
+    <section id="products" class="container py-5">  <!--container sets a max-width at each responsive breakpoint-->  
+        <h2 class="text-center mb-4">Featured Products</h2>  
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">  
+            <!-- Product 1 -->  
+            <div class="col">  
+                <div class="card h-100">  <!--h-100 to ensure all cards have same height-->  
+                    <img src="https://placehold.co/400" class="card-img-top" alt="Product 1">  
+                    <div class="card-body text-center">  
+                        <h5 class="card-title">Product 1</h5>  
+                        <p class="card-text">Brief description of product 1. Great quality and affordable.</p>  
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <!-- Product 2 -->  
+            <div class="col">  
+                <div class="card h-100">  
+                    <img src="https://placehold.co/400" class="card-img-top" alt="Product 2">  
+                    <div class="card-body text-center">  
+                        <h5 class="card-title">Product 2</h5>  
+                        <p class="card-text">Brief description of product 2. Perfect for your needs.</p>  
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <!-- Product 3 -->  
+            <div class="col">  
+                <div class="card h-100">  
+                    <img src="https://placehold.co/400" class="card-img-top" alt="Product 3">  
+                    <div class="card-body text-center">  
+                        <h5 class="card-title">Product 3</h5>  
+                        <p class="card-text">Brief description of product 3. High quality and durable.</p>  
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <!-- Product 4 -->  
+            <div class="col">  
+                <div class="card h-100">  
+                    <img src="https://placehold.co/400" class="card-img-top" alt="Product 4">  
+                    <div class="card-body text-center">  
+                        <h5 class="card-title">Product 4</h5>  
+                        <p class="card-text">Brief description of product 4. Stylish and affordable.</p>  
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
 
-        /* Product Section */
-        .product-card img {
-            max-height: 200px;
-            object-fit: cover;
-        }
+    <!-- Footer Section -->  
+    <footer id="contact" class="footer text-white text-center py-3" style="background-color: #73C7C7;">  <!-- Added inline background color for demonstration -->  
+        <p>&copy; 2025 OnlineStore. All rights reserved.</p>  
+        <p>Follow us on:</p>  
+        <a href="#" class="btn btn-outline-light">Facebook</a>  
+        <a href="#" class="btn btn-outline-light">Instagram</a>  
+        <a href="#" class="btn btn-outline-light">Twitter</a>  
+    </footer>  
 
-        .product-card {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .product-card .card-body {
-            text-align: center;
-        }
-
-        .product-card .btn {
-            background-color: #333;
-            color: white;
-            border-radius: 5px;
-        }
-
-        .product-card .btn:hover {
-            background-color: #555;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 767px) {
-            .navbar-brand {
-                font-size: 1.2rem;
-            }
-
-            .product-card img {
-                max-height: 150px;
-            }
-
-            .product-card {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header Section -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">OnlineStore</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Product Section -->
-    <section id="products" class="container py-5">
-        <h2 class="text-center mb-4">Featured Products</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <!-- Product 1 -->
-            <div class="col">
-                <div class="card product-card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Brief description of product 1. Great quality and affordable.</p>
-                        <a href="#" class="btn btn-primary">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 2 -->
-            <div class="col">
-                <div class="card product-card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Brief description of product 2. Perfect for your needs.</p>
-                        <a href="#" class="btn btn-primary">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 3 -->
-            <div class="col">
-                <div class="card product-card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Brief description of product 3. High quality and durable.</p>
-                        <a href="#" class="btn btn-primary">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 4 -->
-            <div class="col">
-                <div class="card product-card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 4</h5>
-                        <p class="card-text">Brief description of product 4. Stylish and affordable.</p>
-                        <a href="#" class="btn btn-primary">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 OnlineStore. All rights reserved.</p>
-        <p>Follow us on:</p>
-        <a href="#" class="btn btn-outline-light">Facebook</a>
-        <a href="#" class="btn btn-outline-light">Instagram</a>
-        <a href="#" class="btn btn-outline-light">Twitter</a>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>  
+</body>  
 </html>
